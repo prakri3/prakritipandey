@@ -1,149 +1,96 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style-colorful-interactive.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Prakriti Pandey - Civil Engineer</title>
 
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="style-colorful-interactive.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prakriti Pandey - Civil Engineer</title>
-    <!--<style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            color: #333;
-            background-color: #f7f9fc;
-        }
-        header {
-            background-color: #007bff;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #0056b3;
-            padding: 10px 0;
-        }
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        h1, h2 {
-            color: #007bff;
-        }
-        .section {
-            margin-bottom: 40px;
-        }
-        .footer {
-            text-align: center;
-            padding: 10px 0;
-            background-color: #007bff;
-            color: white;
-        }
-        a {
-            color: #007bff;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        .gallery {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-        .gallery img {
-            width: calc(33.333% - 10px);
-            height: auto;
-        }
-    </style> -->
+  <style>
+    .profile-photo {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #fff;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      display: block;
+      margin: 0 auto 15px auto;
+    }
+  </style>
 </head>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
+
 <body>
-    <header>
-        <h1>Prakriti Pandey</h1>
-        <p>Civil Engineer | Researcher | Mobility Enthusiast</p>
-    </header>
-    <nav>
-        <a href="#about">About Me</a>
-        <a href="#projects">Projects</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#contact">Contact</a>
-    </nav>
-    <div class="container">
+  <header>
+    <h1>Prakriti Pandey</h1>
+    <p>Civil Engineer | Researcher | Mobility Enthusiast</p>
+  </header>
+
+  <nav>
+    <a href="#about">About Me</a>
+    <a href="#projects">Projects</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="container">
+    <!-- About Section -->
     <div class="section" id="about">
-  <h2 style="text-align: center;">About Me</h2>
-  <img src="profile.jpg" alt="Prakriti Pandey" class="profile-photo">
-  <h3 style="text-align: center;">Prakriti Pandey</h3>
-  <p style="text-align: center;">
-    Hello! I am Prakriti Pandey, a civil engineer from Nepal. I am currently pursuing my master's degree and conducting research on mobility related to motorcycles. 
-    My research interests include micromobility, mobility space in cities, and urban areas.
-  </p>
-</div>
-       <div class="section" id="projects">
-  <h2>Projects</h2>
-
-  <div class="project-grid" data-aos="fade-up">
-    <div class="project-card">
-      <h3><i class="fas fa-motorcycle"></i> Assessing Road Surface Quality for Two-Wheelers</h3>
-      <p>This project involves developing a novel ride comfort index for motorcycles using frequency response functions and road surface profiles.</p>
-      <a href="https://www.researchgate.net/publication/389333591_ROAD_SURFACE_EVALUATION_CONSIDERING_SCOOTER_RIDER_SAFETY_AND_COMFORT" target="_blank">Read More →</a>
+      <h2 style="text-align: center;">About Me</h2>
+      <img src="profile.jpg" alt="Prakriti Pandey" class="profile-photo" />
+      <h3 style="text-align: center;">Prakriti Pandey</h3>
+      <p style="text-align: center;">
+        Hello! I am Prakriti Pandey, a civil engineer from Nepal. I am currently pursuing my master's degree and conducting research on mobility related to motorcycles. 
+        My research interests include micromobility, mobility space in cities, and urban areas.
+      </p>
     </div>
 
-    <div class="project-card">
-      <h3>Effect of Road Roughness on Cognitive Response</h3>
-      <p>This study explores how IRI and road geometry affect cognitive response using the KIT Driving Simulator.</p>
-      <a href="https://www.researchgate.net/publication/389335942_IMPACT_OF_INTERNATIONAL_ROUGHNESS_INDEX_ON_COGNITIVE_RESPONSE_OF_ROAD_USERS_CONSIDERING_DRIVING_SPEED_AND_ROAD_GEOMETRY" target="_blank">Read More →</a>
-    </div>
-
-    <!-- Add more cards here -->
-  </div>
-</div>
-
-
-
-        <div class="section" id="gallery">
-  <h2>Gallery</h2>
-  <div class="gallery">
-    <div class="gallery-item">
-      <img src="image1.jpg.JPG" alt="Is Micro/Minimobility possible in cold and snowy climatic condition?">
-    </div>
-    <div class="gallery-item">
-      <img src="image2.jpg.jpg" alt="Scooter/Motorcycle">
-    </div>
-    <div class="gallery-item">
-      <img src="image3.jpg.jpg" alt="World Famous Crossing-Shibuya Crossing">
-    </div>
-  </div>
-</div>
-
+    <!-- Projects Section -->
+    <div class="section" id="projects">
+      <h2>Projects</h2>
+      <div class="project-grid" data-aos="fade-up">
+        <div class="project-card">
+          <h3><i class="fas fa-motorcycle"></i> Assessing Road Surface Quality for Two-Wheelers</h3>
+          <p>This project involves developing a novel ride comfort index for motorcycles using frequency response functions and road surface profiles.</p>
+          <a href="https://www.researchgate.net/publication/389333591_ROAD_SURFACE_EVALUATION_CONSIDERING_SCOOTER_RIDER_SAFETY_AND_COMFORT" target="_blank">Read More →</a>
         </div>
-        <div class="section" id="contact">
-            <h2>Contact</h2>
-            <p>You can reach me via email at <a href="mailto:prakriti.dor@gmail.com">prakriti.dor@gmail.com</a>.</p>
-            <p>Connect with me on <a href="https://www.linkedin.com/in/prakriti-pandey-03/" target="_blank">LinkedIn</a> and <a href="https://www.instagram.com/_p_prakriti/" target="_blank">Instagram</a>.</p>
+        <div class="project-card">
+          <h3><i class="fas fa-road"></i> Effect of Road Roughness on Cognitive Response</h3>
+          <p>This study explores how IRI and road geometry affect cognitive response using the KIT Driving Simulator.</p>
+          <a href="https://www.researchgate.net/publication/389335942_IMPACT_OF_INTERNATIONAL_ROUGHNESS_INDEX_ON_COGNITIVE_RESPONSE_OF_ROAD_USERS_CONSIDERING_DRIVING_SPEED_AND_ROAD_GEOMETRY" target="_blank">Read More →</a>
         </div>
+      </div>
     </div>
-    <footer class="footer">
-        <p>&copy; 2024 Prakriti Pandey. All rights reserved.</p>
-    </footer>
+
+    <!-- Gallery Placeholder -->
+    <div class="section" id="gallery">
+      <h2>Gallery</h2>
+      <div class="gallery">
+        <div class="gallery-item"><img src="image1.jpg.JPG" alt="Snowy Street"></div>
+        <div class="gallery-item"><img src="image2.jpg.jpg" alt="Scooters"></div>
+        <div class="gallery-item"><img src="image3.jpg.jpg" alt="Shibuya Crossing"></div>
+      </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="section" id="contact">
+      <h2>Contact</h2>
+      <p>You can reach me via email at <a href="mailto:prakriti.dor@gmail.com">prakriti.dor@gmail.com</a>.</p>
+      <p>Connect with me on <a href="https://www.linkedin.com/in/prakriti-pandey-03/" target="_blank">LinkedIn</a> and <a href="https://www.instagram.com/_p_prakriti/" target="_blank">Instagram</a>.</p>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>&copy; 2024 Prakriti Pandey. All rights reserved.</p>
+  </footer>
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>AOS.init();</script>
 </body>
 </html>
