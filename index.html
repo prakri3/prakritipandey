@@ -1,128 +1,49 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="custom-enhanced-style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prakriti Pandey - Civil Engineer</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            color: #333;
-            background-color: #f7f9fc;
-        }
-        header {
-            background-color: #007bff;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #0056b3;
-            padding: 10px 0;
-        }
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        h1, h2 {
-            color: #007bff;
-        }
-        .section {
-            margin-bottom: 40px;
-        }
-        .footer {
-            text-align: center;
-            padding: 10px 0;
-            background-color: #007bff;
-            color: white;
-        }
-        a {
-            color: #007bff;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        .gallery {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-        .gallery img {
-            width: calc(33.333% - 10px);
-            height: auto;
-        }
-    </style>
+    <title>Prakriti Pandey Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Prakriti Pandey</h1>
-        <p>Civil Engineer | Researcher | Mobility Enthusiast</p>
+
+    <header style="text-align: center; padding: 50px 20px;">
+        <h1 class="display-4">Prakriti Pandey</h1>
+        <p class="lead">Civil Engineer | Mobility Researcher | Urban Innovator</p>
+        <a href="#projects" class="cta-button">Explore My Work</a>
     </header>
-    <nav>
-        <a href="#about">About Me</a>
-        <a href="#projects">Projects</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#contact">Contact</a>
-    </nav>
-    <div class="container">
-        <div class="section" id="about">
-            <h2>About Me</h2>
-            <p>Hello! I am Prakriti Pandey, a civil engineer from Nepal. I am currently pursuing my master's degree and conducting research on mobility related to motorcycles. My research interests include micromobility, mobility space in cities, and urban areas.</p>
-        </div>
-        <div class="section" id="projects">
-             <h2>Projects</h2>
 
-  <div class="project-card">
-    <h3>Assessing Road Surface Quality for Two-Wheelers</h3>
-    <p>
-      This project involves developing a novel ride comfort index for motorcycles using frequency response functions and road surface profiles. Data was collected using accelerometers on campus roads in Japan.
-    </p>
-    <a href="https://www.researchgate.net/publication/389333591_ROAD_SURFACE_EVALUATION_CONSIDERING_SCOOTER_RIDER_SAFETY_AND_COMFORT" target="_blank">Read More →</a>
-  </div>
+    <hr>
 
-  <div class="project-card">
-    <h3>Effect of road roughness on cognitive response of road users</h3>
-    <p>
-      this study explores how the International Roughness Index (IRI) and road geometry affect drivers’ cognitive response and safety. Using the Kitami Institute of Technology Driving Simulator (KITDS), we simulated driving conditions including straight and curved road sections. The findings show a clear correlation between road roughness, vehicle speed, and drivers’ response time, providing insights for safer road design in mountainous terrains.
-    </p>
-    <a href="https://www.researchgate.net/publication/389335942_IMPACT_OF_INTERNATIONAL_ROUGHNESS_INDEX_ON_COGNITIVE_RESPONSE_OF_ROAD_USERS_CONSIDERING_DRIVING_SPEED_AND_ROAD_GEOMETRY" target="_blank">Read More →</a>
-  </div>
-</section>
-
-        </div>
-        <div class="section" id="gallery">
-            <h2>Gallery</h2>
-            <div class="gallery">
-                <img src="image1.jpg.JPG" alt="Is Micro/Minimobility possible in cold and snowy climatic condition?">
-                <img src="image2.jpg.jpg" alt="Scooter/Motorcycle">
-                <img src="image3.jpg.jpg" alt="World Famous Crossing-Shibuya Crossing">
-                <!-- Add more images as needed -->
+    <section id="projects" class="container">
+        <h2 style="text-align:center;">Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>Motorcycle Ride Comfort Index</h3>
+                <p>Developed a novel ride comfort index for motorcycles using frequency-domain vibration data and road profile analysis.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="project-card">
+                <h3>Urban Micromobility in Tokyo</h3>
+                <p>Studied shared e-scooter usage and infrastructure needs in high-density zones using GPS trajectory analysis.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="project-card">
+                <h3>Driver Cognitive Response Study – Kenya</h3>
+                <p>Investigated how pavement roughness and road geometry affect driver reaction times using KIT Driving Simulator.</p>
+                <a href="#">Learn More</a>
             </div>
         </div>
-        <div class="section" id="contact">
-            <h2>Contact</h2>
-            <p>You can reach me via email at <a href="mailto:prakriti.dor@gmail.com">prakriti.dor@gmail.com</a>.</p>
-            <p>Connect with me on <a href="https://www.linkedin.com/in/prakriti-pandey-03/" target="_blank">LinkedIn</a> and <a href="https://www.instagram.com/_p_prakriti/" target="_blank">Instagram</a>.</p>
-        </div>
-    </div>
-    <footer class="footer">
-        <p>&copy; 2024 Prakriti Pandey. All rights reserved.</p>
+    </section>
+
+    <hr>
+
+    <footer style="text-align: center; padding: 30px;">
+        <p>© 2025 Prakriti Pandey. All rights reserved.</p>
     </footer>
+
 </body>
 </html>
