@@ -129,6 +129,7 @@ hr {
 }
 
 /* Gallery */
+/* 
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -155,7 +156,7 @@ hr {
   max-height: 100%;
   object-fit: contain;
   display: block;
-}
+}*/
 
 /* Profile Photo Enhancements */
 .profile-photo {
