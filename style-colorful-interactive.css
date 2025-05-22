@@ -45,10 +45,11 @@ body {
   flex: 1 1 300px;
   max-width: 420px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform: perspective(800px) rotateY(0deg);
 }
 .project-card:hover {
-  transform: translateY(-5px) scale(1.02);
-  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+  transform: perspective(800px) rotateY(3deg) scale(1.03);
+  background: linear-gradient(to bottom right, #fffde7, #e0f2f1);
 }
 .project-card h3 {
   margin-top: 0;
@@ -136,3 +137,8 @@ nav a:hover::after {
   color: white;
   font-size: 0.9rem;
 }
+html {
+  scroll-behavior: smooth;
+}
+
+
