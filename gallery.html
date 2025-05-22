@@ -5,7 +5,56 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Gallery | Prakriti Pandey</title>
-  <link rel="stylesheet" href="custom-enhanced-style.css" />
+  <link rel="stylesheet" href="style-enhanced-header.css" />
+  <style>
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 30px 20px;
+    }
+
+    .gallery-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      padding: 12px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .gallery-item:hover {
+      transform: scale(1.02);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .gallery-item img {
+      max-width: 100%;
+      height: auto;
+      object-fit: contain;
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+    }
+
+    .caption {
+      margin-top: 10px;
+      font-size: 0.95rem;
+      color: #444;
+      font-style: italic;
+      text-align: center;
+      max-width: 90%;
+      line-height: 1.4;
+      background: #f9f9f9;
+      padding: 8px 12px;
+      border-radius: 8px;
+      border-left: 3px solid #1abc9c;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -22,16 +71,18 @@
 
   <div class="container">
     <div class="section gallery">
-      <div class="gallery-item"><img src="image1.jpg.JPG" alt="Snowy City">
-      <p class="caption">Snowy city environment and micro-mobility challenge</p>
-      </div>
-      <div class="gallery-item"><img src="image2.jpg.jpg" alt="Scooters">
-      <p class="caption">Two wheelers used in Nepal</p>
-      </div>
-      <div class="gallery-item"><img src="image3.jpg.jpg" alt="Shibuya Crossing">
-      <p class="caption">Shibuya Crossing: Human flow and urban mobility</p>
-      </div>
-      <!-- Add more images as needed -->
+      <figure class="gallery-item">
+        <img src="image1.jpg.JPG" alt="Snowy City">
+        <figcaption class="caption">Snowy city environment and micro-mobility challenge</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <img src="image2.jpg.jpg" alt="Scooters">
+        <figcaption class="caption">Two wheelers used in Nepal</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <img src="image3.jpg.jpg" alt="Shibuya Crossing">
+        <figcaption class="caption">Shibuya Crossing: Human flow and urban mobility</figcaption>
+      </figure>
     </div>
   </div>
 
