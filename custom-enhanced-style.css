@@ -1,7 +1,76 @@
 
 /* ==================== ENHANCED CUSTOM STYLES ==================== */
 
-/* Improve CTA Button Style */
+/* Base Body Styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(120deg, #e0f7fa, #f9fbe7);
+  color: #2c3e50;
+  margin: 0;
+  padding: 0;
+}
+
+/* Stylish and Centered Header */
+header {
+  background: linear-gradient(135deg, #e0f7fa, #fce4ec);
+  text-align: center;
+  padding: 60px 20px 30px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+header h1 {
+  font-size: 2.8rem;
+  margin: 0;
+  font-weight: 700;
+  color: #2c3e50;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-top: 10px;
+}
+
+/* Smooth fade-in animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Stylish Nav Bar */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  background: transparent;
+  padding: 15px 0;
+  font-weight: bold;
+}
+
+nav a {
+  color: #2c3e50;
+  text-decoration: none;
+  position: relative;
+  padding: 5px 10px;
+  transition: all 0.3s ease;
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #1abc9c;
+  transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* CTA Button */
 .cta-button {
   display: inline-block;
   margin-top: 20px;
@@ -59,18 +128,7 @@ hr {
   margin: 50px 0;
 }
 
-/* Navbar link hover effect */
-nav a {
-  color: #2c3e50;
-  padding: 10px 15px;
-  transition: color 0.3s ease, border-bottom 0.3s ease;
-  text-decoration: none;
-}
-nav a:hover {
-  color: #1abc9c;
-  border-bottom: 2px solid #1abc9c;
-}
-
+/* Gallery */
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -90,12 +148,27 @@ nav a:hover {
   justify-content: center;
   align-items: center;
   height: auto;
-  aspect-ratio: 4 / 3; /* Keeps the shape consistent */
+  aspect-ratio: 4 / 3;
 }
-
 .gallery-item img {
   max-width: 100%;
   max-height: 100%;
-  object-fit: contain; /* Ensures the full image is shown */
+  object-fit: contain;
   display: block;
+}
+
+/* Profile Photo Enhancements */
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+  display: block;
+  margin: 0 auto 15px;
+}
+.profile-photo:hover {
+  transform: scale(1.05);
 }
